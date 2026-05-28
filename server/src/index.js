@@ -1,18 +1,30 @@
-const { createServer } = require('http');
+const express = require('express');
+const http = require('http');
 const { Server } = require('socket.io');
+const cors = require('cors');
 const RoomManager = require('./rooms/room_manager');
 const ChaosScheduler = require('./chaos/chaos_scheduler');
 const registerCanvasHandlers = require('./canvas/canvas_handlers');
 const registerRoomHandlers = require('./sockets/room_handlers');
 const registerVoiceHandlers = require('./voice/voice_handlers');
 
-const PORT = process.env.PORT || 3000;
+const app = express();
 
-const httpServer = createServer();
-const io = new Server(httpServer, {
-  cors: { origin: '*' },
-  transports: ['websocket'],
+app.use(cors());
+
+const server = http.createServer(app);
+const io = new Server(server, {
+  cors: {
+    origin: '*',
+    methods: ['GET', 'POST'],
+  },
 });
+
+app.get('/', (req, res) => {
+  res.send('Chitra Game Server Running');
+});
+
+const PORT = process.env.PORT || 3000;
 
 const roomManager = new RoomManager();
 const chaosScheduler = new ChaosScheduler(io, roomManager);
@@ -31,6 +43,6 @@ io.on('connection', (socket) => {
   });
 });
 
-httpServer.listen(PORT, () => {
-  console.log(`🎮 Chitra Game server running on :${PORT}`);
+server.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });

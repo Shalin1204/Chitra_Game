@@ -2,7 +2,7 @@
 /// API endpoints, socket event names, and timing values.
 abstract class AppConstants {
   // ── Server ──────────────────────────────────────────────────────────────
-  static const String socketUrl = 'http://localhost:3000'; // change per env
+  static const String socketUrl = 'https://chitra-game.onrender.com';
   static const int socketReconnectDelay = 2000; // ms
 
   // ── Room ─────────────────────────────────────────────────────────────────

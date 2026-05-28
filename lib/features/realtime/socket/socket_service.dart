@@ -37,11 +37,14 @@ class SocketService {
   void Function(int)? onTimerUpdate;
 
   void connect(String token) {
-    _socket = io.io(AppConstants.socketUrl, <String, dynamic>{
-      'transports': ['websocket'],
-      'autoConnect': false,
-      'auth': {'token': token},
-    });
+    _socket = io.io(
+      AppConstants.socketUrl,
+      io.OptionBuilder()
+          .setTransports(['websocket'])
+          .disableAutoConnect()
+          .setAuth({'token': token})
+          .build(),
+    );
 
     _socket
       ..onConnect((_) => _status = ConnectionStatus.connected)
