@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "481215011720",
+    "project_id": "chitragame-79d67",
+    "storage_bucket": "chitragame-79d67.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481215011720:android:a319ad2be9514a7044b83d",
+        "android_client_info": {
+          "package_name": "com.shalin.chitragame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481215011720-fdtnkm0oeirr3bf1labdjkbdukdh6ls0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm8j5yPL1GsJVgpG5mvZe-s7P14IYEjsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481215011720-fdtnkm0oeirr3bf1labdjkbdukdh6ls0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "481215011720-u5lbdai84l6mdejhj2937unmar0gd3o6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.shalin.chitragame"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

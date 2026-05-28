@@ -1,0 +1,18 @@
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+.vscode/
+build/
+*.log
+*.iml
+
+# Node.js backend
+server/node_modules/
+
+# Platform build outputs
+android/.gradle/
+ios/Pods/
+linux/flutter/ephemeral/
+macos/Flutter/ephemeral/
+windows/flutter/ephemeral/
