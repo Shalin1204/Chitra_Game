@@ -249,7 +249,7 @@ MIT © Shalin Mishra — see [LICENSE](LICENSE) for details.
 
 Try the latest Android build of Chitra Game:
 
-👉 [Download APK](LINK_TO_APK)
+👉 [Download APK](https://github.com/Shalin1204/Chitra_Game/releases/tag/v1.0.0-beta)
 
 ### Features Included
 - Real-time multiplayer drawing
