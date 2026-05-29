@@ -244,6 +244,23 @@ MIT © Shalin Mishra — see [LICENSE](LICENSE) for details.
 ---
 
 <div align="center">
+    
+## 📱 Download APK
+
+Try the latest Android build of Chitra Game:
+
+👉 [Download APK](LINK_TO_APK)
+
+### Features Included
+- Real-time multiplayer drawing
+- Live guess chat
+- Room code system
+- Emoji avatars
+- Firebase profile storage
+- Categorized word packs
+- Cross-platform Flutter architecture
+
+> Note: The APK is intended for testing and demonstration purposes.
 
 **Made with ❤️, Flutter, and a little bit of Guessing-Game-chaos!**
 
